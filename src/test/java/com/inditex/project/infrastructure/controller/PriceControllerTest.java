@@ -62,6 +62,7 @@ class PriceControllerTest {
                 () -> controller.getPrice(date, productId, brandId));
 
         assertEquals(HttpStatus.NOT_FOUND, ex.getStatusCode());
+        assertNotNull(ex.getReason());
         assertTrue(ex.getReason().contains("productId=" + productId));
         assertTrue(ex.getReason().contains("brandId=" + brandId));
     }
