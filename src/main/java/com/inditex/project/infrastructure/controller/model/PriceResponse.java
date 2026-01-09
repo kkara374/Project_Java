@@ -1,4 +1,4 @@
-package com.inditex.project.dto;
+package com.inditex.project.infrastructure.controller.model;
 
 
 import lombok.AllArgsConstructor;
